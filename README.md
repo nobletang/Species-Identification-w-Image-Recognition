@@ -20,11 +20,6 @@ There are 104 different flower species provided in this dataset. There are 16,46
 
 # Data Preparation
 
-* what will we need to do to this data
-* what could we do to this data
-* what have we tried
-* what worked
-
 The structure of the directory has class labels for the train and validation folder, but the test folder contains images without any labels. To create a typical train, validate, and test structure, the images in the test folder will be ignored from this point on. 10% of the images found in the train folder will be moved into a new test folder. The result are three folders with labeled classes.
 
 With this directory set up, we can now remove the classes of flowers that do not have enough information to train a model on. Functions have been created to select these folders to avoid manually separating the folders by hand. In the models shown in the notebook, the 10th percentile of the number of images found in the training are removed from the scope. This leaves 96 classes with 16,268 images. On average, there should be 168 images per class that can be divided into train, validate, and test sets. 
@@ -32,13 +27,6 @@ With this directory set up, we can now remove the classes of flowers that do not
 Because there are not enough images to properly train a model with nearly 100 classes, data augmentation will be used to make the model more generalizable. Each image will randomly flip, change in brightness, crop, and many other transformations. Also, with these images being RGB, the images will need to be standardized and represented in the range of 0 and 1.
 
 # Modeling
-
-* what models are we doing
-* what models have we tried
-* what model is the final model
-* how did we get to the model
-* what is transfer learning
-* what is an ensemble
 
 Through many iterations, the final model came out to be a convolutional neural network (CNN) with several layers. The model would look through each image and run for 20 epochs. There is also a learning rate that will reduce the rate at which the model will train. The goal of the learning rate is to keep training loss to not get too ahead of the validation loss.
 
@@ -52,9 +40,6 @@ There are some attempts at improving the model during training but metrics were 
 * does the result work in favor of the business problem
 
 
-```python
-
-```
 
 # Conclusion
 
