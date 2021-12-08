@@ -41,4 +41,5 @@ The model could be improved by having more images of flowers to train on. More i
 Image classification of flowers is possible with what was gathered for the model. 31% of the images looked at by this model are correctly identified. While the model could be improved, this is a proof of concept for the U.S. Department of Agriculture. The model has much room for improvement given more time and resources, but for the scope of the project, a model has been trained on images to identify the species of a flower.
 
 ### Nagivation
-![Presentation Slides](https://github.com/nobletang/image-classification/blob/main/capstone_project_slides.pdf)
+[Technical Notebook](https://github.com/nobletang/image-classification/blob/main/technical_notebook.pdf)
+[Presentation Slides](https://github.com/nobletang/image-classification/blob/main/capstone_project_slides.pdf)
